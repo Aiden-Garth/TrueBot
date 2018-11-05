@@ -11,7 +11,7 @@ const prefix = "?"
 const version = "0.1.0"
 const env = require("./settings.json")
 
-client.login(env.TOKEN)
+client.login(process.env.token)
 
 client.on("ready", () => {
   client.user.setActivity(`${client.guilds.size} Servers`, {
